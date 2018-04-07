@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@mipmap/timg"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/iv_user_head_icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/wanqi_eye"
+        android:contentDescription="@string/user_icon_text" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/iv_user_head_icon"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:text="玩奇" />
+
+    <TextView
+        android:id="@+id/tv_user_motto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tv_user_name"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:text="玩出新奇迹" />
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:background="@drawable/selector_normal_btn"
+    android:padding="10dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/tv_item_meal_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30天"
+        android:textColor="#04c9f5"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50元/30羽毛"
+        android:textSize="10sp"
+        android:textColor="#d508af80"
+        android:id="@+id/tv_item_meal_cost"/>
+
+</LinearLayout>

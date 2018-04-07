@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/timg"
+    tools:context="com.wanqi.andy.ui.WalletActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_wallet_back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="10dp"
+        android:onClick="walletOnClick"
+        android:src="@mipmap/back" />
+
+    <TextView
+        android:id="@+id/tv_wallet_mine"
+        android:layout_marginTop="18dp"
+        android:text="我的钱包"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/encode_view"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_wallet_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_below="@+id/tv_wallet_mine"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ad" />
+
+
+    <TextView
+        android:id="@+id/tv_wallet_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentEnd="true"
+        android:text="明细"
+        android:textColor="@color/encode_view" />
+
+    <TextView
+        android:id="@+id/tv_wallet_remain_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/iv_wallet_ad"
+        android:layout_below="@+id/iv_wallet_ad"
+        android:layout_marginTop="15dp"
+        android:text="月卡剩余时间\n30天"
+        android:textColor="@color/bg_color"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_wallet_on_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/iv_wallet_ad"
+        android:layout_alignTop="@+id/tv_wallet_remain_time"
+        android:background="@drawable/selector_normal_btn"
+        android:text="续  费"
+        android:textColor="@color/bg_color"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_wallet_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_wallet_feather"
+        android:layout_below="@+id/tv_wallet_feather"
+        android:layout_marginTop="20dp"
+        android:text="我的余额"
+        android:textColor="@color/contents_text"
+        android:textSize="17sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="391dp" />
+
+    <TextView
+        android:id="@+id/tv_wallet_money_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_wallet_money"
+        android:layout_alignBottom="@+id/tv_wallet_money"
+        android:layout_alignEnd="@+id/tv_wallet_feather_num"
+        android:text="￥50.00"
+        android:textColor="@color/contents_text"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_wallet_feather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_wallet_remain_time"
+        android:layout_below="@+id/btn_wallet_on_pay"
+        android:layout_marginTop="20dp"
+        android:text="我的羽毛"
+        android:textColor="@color/contents_text"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_wallet_feather_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_wallet_feather"
+        android:layout_alignBottom="@+id/tv_wallet_feather"
+        android:layout_alignEnd="@+id/btn_wallet_on_pay"
+        android:text="22片"
+        android:textColor="@color/contents_text"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_wallet_wechat_free"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_wallet_money"
+        android:layout_below="@+id/tv_wallet_money"
+        android:layout_marginTop="20dp"
+        android:text="微信免密"
+        android:textColor="@color/contents_text"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tv_wallet_wechat_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_wallet_wechat_free"
+        android:layout_alignBottom="@+id/tv_wallet_wechat_free"
+        android:layout_alignEnd="@+id/tv_wallet_money_num"
+        android:text="未开通"
+        android:textColor="@color/contents_text"
+        android:textSize="17sp" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/selector_scan_btn"
+        android:text="充  值"
+        android:textSize="18sp" />
+
+</RelativeLayout>
